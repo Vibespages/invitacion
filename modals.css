@@ -1,0 +1,77 @@
+.modal-content{
+    background-color: black;
+    opacity: 1;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.5% 0;
+    width: 30vw;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.modal-header{
+    border-bottom: none;
+}
+
+
+#closeModal{
+    color: gray;
+    background-color: white;
+    font-style: none;
+    font-weight: lighter;
+    border-radius: 50%;
+    font-size: 0.5rem;
+}
+
+.modal-title{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+#songSubmit{
+    background: transparent;
+    border: white 1px solid;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0.8% 0;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 4%;
+    margin-top: 3%;
+}
+
+#modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}   
+
+#modal-footer{
+    margin-top: 3%;
+    text-align: center;
+    border-top: none;
+}
+
+#modal-footer button{
+    width: 25vw;
+}
+
+#modal-header{
+    font-size: 2rem;
+}
+
+#close-button{
+    color: gray;
+    background-color: white;
+    font-style: none;
+    font-weight: lighter;
+    border-radius: 50%;
+    font-size: 0.5rem;
+}
+

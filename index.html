@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego & Lali</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="Imagenes/Favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Serif:opsz@8..144&family=Roboto:wght@300&family=Waterfall&family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AddEvent script -->
+    <script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+    <!-- Include: AddEvent theme css -->
+    <link rel="stylesheet" href="https://cdn.addevent.com/libs/atc/themes/fff-theme-6/theme.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="modals.css">
+    <link rel="stylesheet" href="mediaquery.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Pantalla de Login   -->
+    <div id="login-screen" class="login-screen">
+       <div class="login-container">
+         <h2 id="login-titulo">Bienvenidos</h2>
+          <p id="login-descripcion">A continuación ingrese la contraseña para 
+            comenzar a formar parte de esta gran fiesta.</p>
+              <form id="loginForm">
+                <label id="login-label" for="password" placeholder="Contraseña">Contraseña:</label>
+                <input type="password" id="password" name="password" required placeholder="Contraseña">
+                <button id="login-button" type="submit">Ingresar</button>
+                </form>
+                <div id="loginError" class="error-message" style="display:none;">Contraseña incorrecta</div>
+            </div>
+        </div>
+    
+ <!-- Contenido de la página -->
+         
+    <main id="main-content" class="main-content">
+        <section class="portada">
+            <div class="portada-container">
+                <div class="container-1">  
+                <h1 class="nombre">
+                    Lali & Diego
+                </h1>
+                <div class="frase">"Me dijeron que para enamorarla tenía que hacerla sonreír. El problema es que cada vez que sonríe, me enamoro yo"</div>
+                </div>
+            </div>
+        </section>
+        <section class="divisor">
+        </section>
+        <section class="contador">
+            <div class="timer">
+                <div class="contenido">
+                <p class="falta">Faltan:</p>
+                <div class="container-horario">
+                    <div class="container-dia">
+                        <h3 class="dias">TM</h3>
+                        <h4 class="dias-texto">Días</h4>
+                    </div>
+                    <div class="container-hora">
+                        <h3 class="horas">TM</h3>
+                        <h4 class="horas-texto">Hs</h4>
+                    </div>
+                    <div class="container-minutos">
+                        <h3 class="minutos">TM</h3>
+                        <h4 class="minutos-texto">Min</h4>
+                    </div>
+                    <div class="container-segundos">
+                        <h3 class="segundos">TM</h3>
+                        <h4 class="segundos-texto">Seg</h4>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+        </section>
+        <section class="lugares">
+            <img src="Imagenes/Rectangle 12.png" alt="" class="divisores12">
+            <img src="Imagenes/Rectangle 13.png" alt="" class="divisores13">
+            <img src="Imagenes/gif-copas.gif" alt="" class="img-fluid" id="gif-icon">
+                    <h2 class="boot-title" id="datos-fiesta">Datos de la fiesta</h2>
+                    <h3 class="fecha">
+                        Fecha
+                    </h3>
+                    <p class="dia-exp">
+                        Sabado 30 de Noviembre de 2024
+                    </p>
+                    <p class="dia-exp" id="hora-exp">
+                        21:00 hs
+                    </p>
+                    <button type="button" class="button-lugares" id="agendar-button-real">
+                        <div title="Add to Calendar" class="addeventatc" data-styling="none">
+                            <span id="agendar-button">Agendar</span>
+                            <span class="start">11/30/2024 21:00</span>
+                            <span class="end">12/01/2024 07:00</span>
+                            <span class="title">Lali & Diego</span>
+                            <span class="timezone">GMT-3</span>
+                            <span class="location">La Candela Multiespacio</span>
+                        </div>
+                    </button>
+                    <h3 class="lugar">
+                        Lugar
+                    </h3>
+                    <p class="lugar-exp">
+                        La Candela Multiespacio
+                    </p>
+                    <p class="direccion">
+                        Olavarría
+                    </p>
+                    <button type="button" class="button-lugares" id="comollegar-button">
+                        Como llegar
+                    </button>
+                    </a>
+                </div>
+                </div>
+        </section>
+        <section class="confirmacion">
+            <h2>El camino es mas divertido si lo recorremos juntos!</h2>
+            <img src="Imagenes/Calendario 1.png" alt="" class="img-fluid" id="calendario-img">
+            <p>Confirmar asistencia antes del 31/10.</p>
+            <img src="Imagenes/Menu 1.png" alt="" class="img-fluid" id="menu-img">
+            <p>Indicar restricciones alimentarias (celíacos, veganos vegetarianos)</p>
+            <button href="https://wa.me/+542284597015" target="_blank" id="confirm-button">Confirmar asistencia</button>
+        </section>
+        <section class="fiesta">
+            <div class="fiesta-container">
+                <h2 class="fiesta-titulo">Festejemos juntos!</h2>
+                <p class="fiesta-descripcion">Queremos que todos pasemos una noche inolvidable. Para ello, te dejamos algunos puntos a tener en cuenta</p>
+                <div class="row container-fluid" id="columnas-fiesta">
+                    <div class="primario col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center" id="cont-fiesta-1">
+                        <div class="container-fiesta">
+                            <h3 class="title">Música</h3>
+                            <img class="img-fluid" src="Imagenes/musica.gif" style="width: 30%; margin-bottom: 5%;">
+                            <p class="flex-grow-1" id="sugerir-cancion">¿Qué canción te gustaría escuchar en nuestra fiesta?</p>
+                            <button type="button" id="button-sugerir" class="button-rectangles" data-bs-toggle="modal" data-bs-target="#sugerirCancionModal">
+                                Sugerir canción
+                              </button>
+                        </div>
+                    </div>
+                    <div class="primario col-lg-6 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center" id="cont-fiesta-2">
+                        <div class="container-fiesta">
+                            <h3 class="title">Dress Code</h3>
+                            <img class="img-fluid" src="Imagenes/dress code2.gif" style="width: 30%; margin-bottom: 5%;">
+                            <p class="flex-grow-1" id="outfit">Una orientación para tu outfit</p>
+                            <button type="button" id="button-vermas" class="button-rectangles" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Ver más
+                            </button>
+
+<!-- Modal para sugerir canción -->
+                    <div class="modal fade" id="sugerirCancionModal" tabindex="-1" aria-labelledby="sugerirCancionLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-button"></button>
+                                </div>
+                                <div class="modal-body">
+                                 <h5 class="modal-title" id="sugerirCancionLabel">Elijamos juntos la música</h5>
+                                    <form id="songForm">
+                                        <div class="mb-3">
+                                            <label for="songName" class="form-label">Nombre de la canción:</label>
+                                            <input type="text" class="form-control" id="songName" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="songAuthor" class="form-label">Nombre del autor:</label>
+                                            <input type="text" class="form-control" id="songAuthor" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary" id="sendButton">Enviar</button>
+                                    </form>
+                                    <p id="responseMessage" class="mt-3"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+
+      <!-- Modal para el dress code -->    
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content" id="modal-content">
+                                    <div class="modal-header" id="modal-header">
+                                    <h1 class="modal-title fs-5">DRESS CODE</h1>
+                                    </div>
+                                    <img src="Imagenes/Capa.png" alt="" class="img-fluid">
+                                    <div class="modal-body">
+                                    DE GALA
+                                    </div>
+                                    <div class="modal-footer" id="modal-footer">
+                                    <button type="button" class="button-lugares" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <section class="footer">
+            <div class="foot">
+                <img src="Imagenes/Regalo2.gif" alt="" class="img-fluid" id="first-footer-img">
+                <p class="descripcion-footer">
+                    El regalo es opcional, la asistencia obligatoria.
+                </p>
+                <p class="descripcion-footer-2">
+                    Si querés tener un detalle con nosotros, sumá kilómetros a nuestro viaje.
+                </p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#datosBancarios" id="button-detalles">
+                    Más detalles
+                </button>
+            </div>
+        </section>
+        <section class="compartir">
+            <img src="Imagenes/Rectangle 12.png" alt="" class="divisores14">
+            <img src="Imagenes/Rectangle 13.png" alt="" class="divisores15">
+            <h2>Compartamos juntos este momento!</h2>
+            <p>Escaneá este QR y compartinos las fotos y videos que hayas tomado durante la fiesta.</p>
+            <img src="Imagenes/QR.png" alt="" class="img-fluid" id="QR">        
+        </section>  
+        <div class="createdby">Sitio creado por <a href="https://www.instagram.com/vibesbybel_/" id="vibesbybel" target="_blank">@vibesbybel</a></div>
+    </main>
+        <!-- Modal de datos bancarios -->
+        <div class="modal fade" id="datosBancarios" tabindex="-1" aria-labelledby="sugerirCancionModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal header with close button (X) -->
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close-button"></button>
+                    </div>
+                    
+        <!-- Modal body with title, image, subtitles, and text -->
+                    <div class="modal-body">
+                        <h5 class="modal-title" id="detallesModalLabel">Datos bancarios</h5>
+                        
+                        <img src="Imagenes/Capa_1.png" class="img-fluid mb-2">
+                        
+                        <h6>Cuenta única en pesos</h6>
+                        <p>173-035080/8</p>
+                        
+                        <h6>Alias</h6>
+                        <p>mando.cardo.retina</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <script src="js/bootstrap.min.js"></script>    
+        <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
