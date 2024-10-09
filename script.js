@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   var password = document.getElementById('password').value;
 
   // Credenciales predefinidas
-  if (password === '1') {
+  if (password === '10años') {
       // Login exitoso, oculta la pantalla de login y muestra el contenido
       document.getElementById('login-screen').style.display = 'none';
       document.getElementById('main-content').style.display = 'block';
