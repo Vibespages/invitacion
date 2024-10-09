@@ -79,8 +79,8 @@ document.getElementById("confirm-button").onclick = function() {
   document.getElementById('agendar-button-real').addEventListener('click', function() {
     // Detalles del evento
     const title = "Lali & Diego";
-    const startDate = "2024-11-30T21:00:00"; // Formato ISO 8601
-    const endDate = "2024-12-01T07:00:00"; // Formato ISO 8601
+    const startDate = new Date("2024-11-30T21:00:00-03:00"); // 30 de noviembre a las 21:00, GMT-3
+    const endDate = new Date("2024-12-01T07:00:00-03:00"); // 1 de diciembre a las 07:00, GMT-3
     const location = "La Candela Multiespacio, Olavarría";
     const description = "";
 
