@@ -74,3 +74,19 @@ document.getElementById("confirm-button").onclick = function() {
       document.getElementById("responseMessage").innerText = "Hubo un error al enviar tu recomendación.";
     });
   };
+
+
+  document.getElementById('agendar-button-real').addEventListener('click', function() {
+    // Detalles del evento
+    const title = "Lali & Diego";
+    const startDate = "2024-11-30T21:00:00"; // Formato ISO 8601
+    const endDate = "2024-12-01T07:00:00"; // Formato ISO 8601
+    const location = "La Candela Multiespacio, Olavarría";
+    const description = "";
+
+    // Crear el enlace para Google Calendar
+    const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&location=${encodeURIComponent(location)}&details=${encodeURIComponent(description)}`;
+
+    // Abrir el enlace en una nueva pestaña
+    window.open(googleCalendarLink, '_blank');
+});
