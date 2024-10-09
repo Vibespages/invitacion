@@ -24,53 +24,6 @@
         display: none;
     }
 
-   /* .portada{
-        margin-bottom: 0;
-        background-image: url(Imagenes/fondo\ lali\ y\ diego\ -\ copia.jpg);
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 105vh;
-    }
-    
-    .portada-container{
-        height: 75vh;
-        background-image: url(Imagenes/Circulo\ lali\ y\ diego\ -\ copia.png);
-        background-size: contain;
-        background-position: top center;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: 120%;
-    } 
-
-    .container-1 {
-        padding-left: 8%;
-        font-size: 1.2rem;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-    .nombre{
-        font-size: 2rem;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-        margin-top: 30%;
-        margin-bottom: 5%;
-    }
-
-    .frase{
-        font-size: 0.7em;
-        letter-spacing: 1.1px;
-        width: 70%;
-    }
-*/
-
     .divisor {
         background-size: contain;
         background-repeat: no-repeat;
@@ -80,7 +33,7 @@
     }
 
     .contador {
-        margin-top: -15%;
+        margin-top: -14%;
   
     }
 
