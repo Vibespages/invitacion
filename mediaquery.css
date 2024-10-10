@@ -3,6 +3,7 @@
     body {
         overflow-x: hidden;
         width: 100%;
+        background-color: black;
     }
 
     #login-descripcion{
@@ -25,16 +26,23 @@
         display: none;
     }
 
-    .divisor {
-        background-size: contain;
+    .contador {
+        margin-top: -5%;
+        background-image: url(Imagenes/Fondo\ negro.png);
+        background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-position: center;
-        height: 20vh;
-        margin-top: -19%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
     }
 
     .contador {
-        margin-top: -14%;
+        background-image: url(Imagenes/fondo\ negro\ celular.png);
+        background-size: 100% auto;
+        margin-top: -7%;
+        padding-top: 12%;
   
     }
 

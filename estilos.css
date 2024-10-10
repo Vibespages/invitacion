@@ -61,7 +61,7 @@ body {
     width: 42%;
     text-align: center;
 }
-
+/*
 .divisor {
     background-image: url(Imagenes/divisor-horizontal.jpg);
     background-size: 100% 100%;
@@ -70,14 +70,18 @@ body {
     width: auto;
     margin-top: -6%;
 }
+*/
 
 .contador {
-    margin-top: -1%;
-    background-color: black;
+    margin-top: -5%;
+    background-image: url(Imagenes/Fondo\ negro.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 15%;
 }
 
 .phrases{
@@ -455,7 +459,7 @@ body {
 }
 
 .createdby {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     text-align: center;
     padding: 1%;
     font-weight: 500;
