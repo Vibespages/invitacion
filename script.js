@@ -65,23 +65,11 @@ document.getElementById('confirm-button').addEventListener('click', function() {
   };
 */
 
-document.getElementById('qrbutton').addEventListener('click', function() {
-  const googleMapsUrl = 'https://weduploader.com/upload/UKB7AEUrfXmdSels?utm_source=site&utm_medium=qrcode&utm_campaign=dashboard&utm_content=UKB7AEUrfXmdSels'; // URL de Google Maps, WhatsApp, Google Calendar, etc.
-
-  if (isMobile()) {
-      // Si está en móvil, redirigir en la misma ventana (esto abre la app correspondiente)
-      window.location.href = googleMapsUrl;
-  } else {
-      // Si está en PC, abrir en una nueva pestaña como de costumbre
-      window.open(googleMapsUrl, '_blank');
-  }
-});
-
-/*
+//Javascript para el button QR
   document.getElementById("qrbutton").onclick = function() {
     window.open("https://weduploader.com/upload/UKB7AEUrfXmdSels?utm_source=site&utm_medium=qrcode&utm_campaign=dashboard&utm_content=UKB7AEUrfXmdSels", "_blank");
   };
-*/
+
 
 document.getElementById('comollegar-button').addEventListener('click', function() {
   const googleMapsUrl = 'https://maps.app.goo.gl/2f8a8ushStF6uecbA'; // URL de Google Maps, WhatsApp, Google Calendar, etc.
@@ -154,6 +142,11 @@ document.getElementById('comollegar-button').addEventListener('click', function(
     // Crear el enlace para Google Calendar
     const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${formattedStartDate}/${formattedEndDate}&location=${encodeURIComponent(location)}&details=${encodeURIComponent(description)}`;
 
-    // Abrir el enlace en una nueva pestaña
-    window.open(googleCalendarLink, '_blank');
+    if (isMobile()) {
+      // Si está en móvil, redirigir en la misma ventana (esto abre la app correspondiente)
+      window.location.href = googleCalendarLink;
+    } else {
+      // Si está en PC, abrir en una nueva pestaña como de costumbre
+      window.open(googleCalendarLink, '_blank');
+    }
 });
