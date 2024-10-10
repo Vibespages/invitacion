@@ -80,12 +80,27 @@ document.getElementById("confirm-button").onclick = function() {
     // Detalles del evento
     const title = "Lali & Diego";
     const startDate = new Date("2024-11-30T21:00:00-03:00"); // 30 de noviembre a las 21:00, GMT-3
-    const endDate = new Date("2024-12-01T07:00:00-03:00"); // 1 de diciembre a las 07:00, GMT-3
+    const endDate = new Date("2024-12-01T07:00:00-03:00");   // 1 de diciembre a las 07:00, GMT-3
     const location = "La Candela Multiespacio, Olavarría";
     const description = "";
 
+    // Función para formatear la fecha en el formato que Google Calendar espera: YYYYMMDDTHHmmssZ
+    function formatDate(date) {
+        const year = date.getUTCFullYear();
+        const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+        const day = String(date.getUTCDate()).padStart(2, '0');
+        const hours = String(date.getUTCHours()).padStart(2, '0');
+        const minutes = String(date.getUTCMinutes()).padStart(2, '0');
+        const seconds = String(date.getUTCSeconds()).padStart(2, '0');
+        return `${year}${month}${day}T${hours}${minutes}${seconds}Z`;
+    }
+
+    // Formatear las fechas de inicio y fin
+    const formattedStartDate = formatDate(startDate);
+    const formattedEndDate = formatDate(endDate);
+
     // Crear el enlace para Google Calendar
-    const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&location=${encodeURIComponent(location)}&details=${encodeURIComponent(description)}`;
+    const googleCalendarLink = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${formattedStartDate}/${formattedEndDate}&location=${encodeURIComponent(location)}&details=${encodeURIComponent(description)}`;
 
     // Abrir el enlace en una nueva pestaña
     window.open(googleCalendarLink, '_blank');
