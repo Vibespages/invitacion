@@ -83,9 +83,6 @@ document.getElementById('comollegar-button').addEventListener('click', function(
   }
 });
 
-
-
-
  /* document.getElementById("comollegar-button").onclick = function() {
     window.open("https://maps.app.goo.gl/2f8a8ushStF6uecbA", "_blank");
   };
