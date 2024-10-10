@@ -64,15 +64,44 @@ document.getElementById('confirm-button').addEventListener('click', function() {
     window.open("https://wa.me/+542284597015", "_blank");
   };
 */
+
+document.getElementById('qrbutton').addEventListener('click', function() {
+  const googleMapsUrl = 'https://weduploader.com/upload/UKB7AEUrfXmdSels?utm_source=site&utm_medium=qrcode&utm_campaign=dashboard&utm_content=UKB7AEUrfXmdSels'; // URL de Google Maps, WhatsApp, Google Calendar, etc.
+
+  if (isMobile()) {
+      // Si está en móvil, redirigir en la misma ventana (esto abre la app correspondiente)
+      window.location.href = googleMapsUrl;
+  } else {
+      // Si está en PC, abrir en una nueva pestaña como de costumbre
+      window.open(googleMapsUrl, '_blank');
+  }
+});
+
+/*
   document.getElementById("qrbutton").onclick = function() {
     window.open("https://weduploader.com/upload/UKB7AEUrfXmdSels?utm_source=site&utm_medium=qrcode&utm_campaign=dashboard&utm_content=UKB7AEUrfXmdSels", "_blank");
   };
+*/
+
+document.getElementById('comollegar-button').addEventListener('click', function() {
+  const googleMapsUrl = 'https://maps.app.goo.gl/2f8a8ushStF6uecbA'; // URL de Google Maps, WhatsApp, Google Calendar, etc.
+
+  if (isMobile()) {
+      // Si está en móvil, redirigir en la misma ventana (esto abre la app correspondiente)
+      window.location.href = googleMapsUrl;
+  } else {
+      // Si está en PC, abrir en una nueva pestaña como de costumbre
+      window.open(googleMapsUrl, '_blank');
+  }
+});
 
 
-  document.getElementById("comollegar-button").onclick = function() {
+
+
+ /* document.getElementById("comollegar-button").onclick = function() {
     window.open("https://maps.app.goo.gl/2f8a8ushStF6uecbA", "_blank");
   };
-
+*/
 
   //Envio de info para las canciones al sheet
   document.getElementById("songForm").onsubmit = function(e) {
