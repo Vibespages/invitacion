@@ -45,6 +45,10 @@ document.getElementById("confirm-button").onclick = function() {
     window.open("https://wa.me/+542284597015", "_blank");
   };
 
+  document.getElementById("qrbutton").onclick = function() {
+    window.open("https://weduploader.com/upload/UKB7AEUrfXmdSels?utm_source=site&utm_medium=qrcode&utm_campaign=dashboard&utm_content=UKB7AEUrfXmdSels", "_blank");
+  };
+
 
   document.getElementById("comollegar-button").onclick = function() {
     window.open("https://maps.app.goo.gl/2f8a8ushStF6uecbA", "_blank");

@@ -192,6 +192,10 @@
         width: 90%;
     }
 
+    .confirmacion{
+        padding: 0% 1%;
+    }
+
     .confirmacion h2{
         font-size: 1.6rem;
         font-weight: bolder;
@@ -203,6 +207,8 @@
         text-align: center;
         margin-bottom: 2%;
         padding-top: 8%;
+        padding-left: 4%;
+        padding-right: 4%;
     }
 
     #calendario-img {
@@ -325,6 +331,7 @@
         font-size: 1.1rem;
         text-align: center;
         padding: 2%;
+        padding-bottom: 6%;
         font-weight: 500;
         background-color: grey;
         opacity: 0.8;
