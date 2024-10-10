@@ -40,11 +40,30 @@ const countdown = () => {
 
 setInterval(countdown, 1000)
 
+
+function isMobile() {
+  // Detectar si el usuario está en un dispositivo móvil
+  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
+document.getElementById('confirm-button').addEventListener('click', function() {
+  const googleMapsUrl = 'https://wa.me/+542284597015'; // URL de Google Maps, WhatsApp, Google Calendar, etc.
+
+  if (isMobile()) {
+      // Si está en móvil, redirigir en la misma ventana (esto abre la app correspondiente)
+      window.location.href = googleMapsUrl;
+  } else {
+      // Si está en PC, abrir en una nueva pestaña como de costumbre
+      window.open(googleMapsUrl, '_blank');
+  }
+});
+
+
 //Javascript para el button a Whatsapp
-document.getElementById("confirm-button").onclick = function() {
+/*document.getElementById("confirm-button").onclick = function() {
     window.open("https://wa.me/+542284597015", "_blank");
   };
-
+*/
   document.getElementById("qrbutton").onclick = function() {
     window.open("https://weduploader.com/upload/UKB7AEUrfXmdSels?utm_source=site&utm_medium=qrcode&utm_campaign=dashboard&utm_content=UKB7AEUrfXmdSels", "_blank");
   };
