@@ -67,7 +67,7 @@ document.getElementById('confirm-button').addEventListener('click', function() {
 
 //Javascript para el button QR
   document.getElementById("qrbutton").onclick = function() {
-    window.open("https://weduploader.com/upload/UKB7AEUrfXmdSels?utm_source=site&utm_medium=qrcode&utm_campaign=dashboard&utm_content=UKB7AEUrfXmdSels", "_blank");
+    window.open("https://instabooth.ar/lalidiego/", "_blank");
   };
 
 
